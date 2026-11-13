@@ -1,0 +1,519 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+li {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+
+header {
+    margin: 0 0 144px 0;
+    background-color: #f8f9fa;
+    padding: 30px 0 20px 0;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nome {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.n1 {
+    color: #12aa1f;
+}
+
+.n2 {
+    color: rgb(97, 2, 221);
+}
+
+a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    color: rgb(73, 1, 133);
+    transition: opacity 0.2s;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.botao-login {
+    width: 130px;
+    height: 38px;
+    border-radius: 20px;
+    background-color: rgb(47, 0, 85);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(136, 255, 0);
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.botao-login:hover {
+    opacity: 0.8;
+    background-color: rgb(90, 47, 47);
+}
+
+.logo {
+    width: 40%;
+    max-width: 430px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5%;
+}
+
+.texto {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5%;
+    text-align: left;
+}
+
+main {
+    text-align: center;
+}
+
+.botao-explore {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: rgb(112, 9, 209);
+    border: none;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 400;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s;
+    text-decoration: none;
+    color: white;
+}
+
+.botao-explore:hover {
+    opacity: 0.7;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(24, 170, 36);
+}
+
+.sub-titulo {
+    color: rgb(74, 0, 172);
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.paragrafo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(52, 156, 31);
+    text-align: justify;
+    margin: 20px 0 30px 0;
+    max-width: 500px;
+}
+
+footer {
+    text-align: center;
+    background-color: #5d15da;
+    padding: 80px 0;
+    font-size: 14px;
+    margin-top: 100px;
+    color: #f0f0f0;
+}
+
+.img-dog {
+    display: block;
+    width: 70%;
+    height: 450px;
+    object-fit: cover;
+    margin: 80px auto 0 auto;
+    border-radius: 15px;
+}
+
+.servicos {
+    padding: 10px 0 100px 0;
+}
+
+.h2-servicos {
+    font-weight: 500;
+}
+
+.lista-servicos {
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    color: #515151;
+    border: 2px solid;
+    margin: 17px 10px;
+    padding: 16px 0;
+    border-radius: 15px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.lista-servicos:hover {
+    box-shadow: 0 2px 5px rgba(23, 38, 170, 0.719);
+    transform: translateY(-2px);
+}
+
+.img-card {
+    width: 70%;
+}
+
+.preco {
+    margin-top: 10px;
+}
+
+.agenda {
+    width: 220px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: rgb(47, 0, 85);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(136, 255, 0);
+    transition: transform 0.3s;
+}
+
+.agenda:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 30px 0 60px 0;
+        text-align: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nome {
+        display: none;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0 5px 0 0;
+    }
+
+    .botao-login {
+        width: 90px;
+        height: 32px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .logo {
+        width: 80%;
+        max-width: 430px;
+        display: block;
+        margin: 0 auto 25px;
+        border-radius: 15px;
+    }
+
+    .texto {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .paragrafo {
+        margin: 20px auto 30px;
+    }
+
+    .img-dog {
+        width: 90%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .servicos {
+        padding-bottom: 50px;
+    }
+
+    .servicos li {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .h2-servicos {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .lista-servicos {
+        width: 200px;
+        margin: 17px 10px;
+        padding: 16px 0;
+    }
+
+    footer {
+        padding: 50px 0;
+        margin-top: 60px;
+    }
+}
+
+
+.botao-login {
+    width: 130px;
+    height: 38px;
+    border-radius: 20px;
+    background-color: rgb(47, 0, 85);
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(136, 255, 0);
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.botao-login:hover {
+    opacity: 0.8;
+    background-color: rgb(90, 47, 47);
+}
+
+.logo {
+    width: 40%;
+    max-width: 430px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5%;
+}
+
+.texto {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5%;
+    text-align: left;
+}
+
+main {
+    text-align: center;
+}
+
+.botao-explore {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: rgb(112, 9, 209);
+    border: none;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 400;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s;
+    text-decoration: none;
+    color: white;
+}
+
+.botao-explore:hover {
+    opacity: 0.7;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(24, 170, 36);
+}
+
+.sub-titulo {
+    color: rgb(74, 0, 172);
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.paragrafo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(52, 156, 31);
+    text-align: justify;
+    margin: 20px 0 30px 0;
+    max-width: 500px;
+}
+
+footer {
+    text-align: center;
+    background-color: #5d15da;
+    padding: 80px 0;
+    font-size: 14px;
+    margin-top: 100px;
+    color: #f0f0f0;
+}
+
+.img-dog {
+    display: block;
+    width: 70%;
+    height: 450px;
+    object-fit: cover;
+    margin: 80px auto 0 auto;
+    border-radius: 15px;
+}
+
+.servicos {
+    padding: 10px 0 100px 0;
+}
+
+.h2-servicos {
+    font-weight: 500;
+}
+
+.lista-servicos {
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    color: #515151;
+    border: 2px solid;
+    margin: 17px 10px;
+    padding: 16px 0;
+    border-radius: 15px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.lista-servicos:hover {
+    box-shadow: 0 2px 5px rgba(23, 38, 170, 0.719);
+    transform: translateY(-2px);
+}
+
+.img-card {
+    width: 70%;
+}
+
+.preco {
+    margin-top: 10px;
+}
+
+.agenda {
+    width: 220px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: rgb(47, 0, 85);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(136, 255, 0);
+    transition: transform 0.3s;
+}
+
+.agenda:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 30px 0 60px 0;
+        text-align: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nome {
+        display: none;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0 5px 0 0;
+    }
+
+    .botao-login {
+        width: 90px;
+        height: 32px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .logo {
+        width: 80%;
+        max-width: 430px;
+        display: block;
+        margin: 0 auto 25px;
+        border-radius: 15px;
+    }
+
+    .texto {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .paragrafo {
+        margin: 20px auto 30px;
+    }
+
+    .img-dog {
+        width: 90%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .servicos {
+        padding-bottom: 50px;
+    }
+
+    .servicos li {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .h2-servicos {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .lista-servicos {
+        width: 200px;
+        margin: 17px 10px;
+        padding: 16px 0;
+    }
+
+    footer {
+        padding: 50px 0;
+        margin-top: 60px;
+    }
+}
+
